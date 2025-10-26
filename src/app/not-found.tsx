@@ -1,11 +1,13 @@
 'use client'
 
 import { Loader2 } from "lucide-react"
+import { useRouter } from "next/router"
+import { useEffect } from "react"
 
 // import { FadeLoader } from "react-spinners"
 
-const { useRouter } = require("next/navigation")
-const { useEffect } = require("react")
+// const { useRouter } = require("next/navigation")
+// const { useEffect } = require("react")
 
 const NotFound = ()=> {
 
