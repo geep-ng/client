@@ -7,7 +7,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
-import toast from "react-hot-toast";
+import { toast } from "sonner";
+// import toast from "sonner";
 
 type FormData = {
   email: string;
@@ -163,7 +164,7 @@ const ForgotPassword = () => {
                              </div>
                          </div>
                          <h1 className=" text-3xl font-medium">
-                             Hey, Lujer <br />Let's help you reset your password!
+                             Hey, Lujer <br />Let&apos;s help you reset your password!
                          </h1>
 
                       <div>
