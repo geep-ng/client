@@ -155,11 +155,11 @@ type FormData = {
 
             <div>
               <label className="block text-lg font-semibold ml-5 text-blue-900 mb-1"> {/* Rebranded label text color */}
-                Instagram Username
+                Full Name
               </label>
               <input
                 type="text"
-                placeholder="yourusername"
+                placeholder="your name"
                 className="w-full p-4 border-blue-900 border-2 outline-0 !rounded-full mb-1 focus:ring-blue-500 focus:border-blue-500" // Rebranded input border and focus
                 {...register("fullName", {
                   required: "Name is required",

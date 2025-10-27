@@ -41,9 +41,9 @@ const Countdown: React.FC = () => {
 
   const timerComponents = useMemo(() => {
     return Object.entries(timeLeft).map(([unit, value]) => (
-      <div key={unit} className="flex flex-col items-center p-6 bg-white rounded-2xl shadow-xl transition hover:shadow-2xl transform hover:-translate-y-1">
-        <span className="text-5xl font-extrabold text-blue-700">{value.toString().padStart(2, '0')}</span>
-        <span className="text-base font-medium text-gray-500 uppercase mt-2">{unit}</span>
+      <div key={unit} className="flex flex-col items-center p-2 md:p-6 bg-white rounded-2xl shadow-xl transition hover:shadow-2xl transform hover:-translate-y-1">
+        <span className=" text-xl md:text-5xl font-extrabold text-blue-700">{value.toString().padStart(2, '0')}</span>
+        <span className=" text-sm md:text-base font-medium text-gray-500 uppercase mt-2">{unit}</span>
       </div>
     ));
   }, [timeLeft]);

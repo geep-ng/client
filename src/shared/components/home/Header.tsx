@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 /** The main responsive navigation header component */
@@ -46,7 +47,7 @@ const Header: React.FC = () => {
             <a href="#hero" className="block w-full text-center py-2 text-gray-700 hover:bg-blue-50 rounded-md" onClick={() => setIsOpen(false)}>Home</a>
             <a href="#features" className="block w-full text-center py-2 text-gray-700 hover:bg-blue-50 rounded-md" onClick={() => setIsOpen(false)}>Features</a>
             <a href="#countdown" className="block w-full text-center py-2 text-gray-700 hover:bg-blue-50 rounded-md" onClick={() => setIsOpen(false)}>Launch</a>
-            <a href="#waitlist" className="block w-11/12 text-center py-2 mt-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700" onClick={() => setIsOpen(false)}>Join Waitlist</a>
+            <Link href="/login" className="block w-11/12 text-center py-2 mt-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700" onClick={() => setIsOpen(false)}>Get Started</Link>
           </nav>
         </div>
       )}
