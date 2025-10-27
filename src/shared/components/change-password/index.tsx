@@ -1,4 +1,5 @@
-import axiosInstance from 'apps/user-ui/src/utils/axiosInstance';
+// import axiosInstance from 'apps/user-ui/src/utils/axiosInstance';
+import axiosInstance from '@/utils/axiosInstance';
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 
@@ -9,6 +10,7 @@ const ChangePassword = () => {
 
   const { register, handleSubmit, watch, reset, formState: { errors, isSubmitting } } = useForm();
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onSubmit = async (data: any) => {
     setError("");
     setMessage("");
@@ -20,6 +22,7 @@ const ChangePassword = () => {
       });
       setMessage("Password updated successfully!");
       reset();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       setError(error?.response?.data?.message)
     }
