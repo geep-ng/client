@@ -1,7 +1,8 @@
 'use client'
 
 import { Loader2 } from "lucide-react"
-import { useRouter } from "next/router"
+import { useRouter } from "next/navigation"
+// import { useRouter } from "next/router"
 import { useEffect } from "react"
 
 // import { FadeLoader } from "react-spinners"
